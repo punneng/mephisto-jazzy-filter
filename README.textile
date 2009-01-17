@@ -1,0 +1,63 @@
+Mephisto Jazzy Filter
+=====================
+
+A syntax filter plugin for Mephisto based on Ultraviolet (http://ultraviolet.rubyforge.org/)
+
+Ultraviolet is a syntax highlighting engine based on Textpow (http://textpow.rubyforge.org/). Since it uses Textmate (http://macromates.com/) syntax files, it offers out of the box syntax highlighting for more than 50 languages (http://macromates.com/svn/Bundles/trunk/Bundles/) and 20 themes (http://ultraviolet.rubyforge.org/themes.xhtml).  
+
+Requirements
+============
+ 
+- Oniguruma (http://www.geocities.jp/kosako3/oniguruma/) and Oniguruma for Ruby (http://rubyforge.org/projects/oniguruma/)
+- Textpow
+- Ultraviolet   
+
+Installation
+============
+
+- Oniguruma
+Ubuntu or Debian
+  sudo apt-get install libonig-dev      
+OS X (MacPorts)
+  sudo port install oniguruma5  
+
+- Ultraviolet, Textpow and Oniguruma for Ruby
+  sudo gem install -r ultraviolet --include-dependencies
+
+- Jazzy Filter
+  ruby script/plugin install http://svn.punneng.net/projects/mephisto_jazzy_filter
+
+Deploying
+=========
+
+1. Copy $GEM_HOME/ultraviolet-x.x.x/render/xhtml/files/css/your_template_you_like.css to stylesheets folder in your_app/themes/    
+
+2. Copy jazzy.css in mephisto_jazzy_filter/assets to stylesheets folder in your_app/themes/. You can amend it as you want.
+
+3. Include both of css into your layout.liquid
+  {{ 'your_template_you_like.css' | stylesheet }}   
+  {{ 'jazzy' | stylesheet }}
+
+Usage
+=====
+
+Put these codes below into your post. 
+   
+<filter:jzfilter lang="ruby">puts "I love Mephisto"</filter:jzfilter> 
+
+lang can be languages in $GEM_HOME/ultraviolet-x.x.x/syntax/
+or  
+
+<filter:jzfilter lang="ruby" line_numbers="no">puts "I love Mephisto"</filter:jzfilter>
+
+line_numbers can be 'table'(default), 'inline' or 'no' ('whatever' is 'no' as well)
+
+License
+=======
+
+See MIT-LICENSE  
+
+Contact me
+==========
+
+punneng at gmail dot com
