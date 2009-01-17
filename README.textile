@@ -1,14 +1,14 @@
 Mephisto Jazzy Filter
 =====================
 
-A syntax filter plugin for Mephisto based on Ultraviolet (http://ultraviolet.rubyforge.org/)
+A syntax filter plugin for Mephisto based on "Ultraviolet":http://ultraviolet.rubyforge.org/
 
-Ultraviolet is a syntax highlighting engine based on Textpow (http://textpow.rubyforge.org/). Since it uses Textmate (http://macromates.com/) syntax files, it offers out of the box syntax highlighting for more than 50 languages (http://macromates.com/svn/Bundles/trunk/Bundles/) and 20 themes (http://ultraviolet.rubyforge.org/themes.xhtml).  
+Ultraviolet is a syntax highlighting engine based on "Textpow":http://textpow.rubyforge.org/. Since it uses "Textmate":http://macromates.com/ syntax files, it offers out of the box syntax highlighting for "more than 50 languages":http://macromates.com/svn/Bundles/trunk/Bundles/ and "20 themes":http://ultraviolet.rubyforge.org/themes.xhtml .  
 
 Requirements
 ============
  
-- Oniguruma (http://www.geocities.jp/kosako3/oniguruma/) and Oniguruma for Ruby (http://rubyforge.org/projects/oniguruma/)
+- "Onigurum"a:http://www.geocities.jp/kosako3/oniguruma/ and "Oniguruma for Ruby":http://rubyforge.org/projects/oniguruma/
 - Textpow
 - Ultraviolet   
 
