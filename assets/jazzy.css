@@ -1,0 +1,38 @@
+/* == Jazzy Filter == */
+
+.jazzy{
+	width: 100%;
+}
+                       
+table.jazzy{
+	border:1px solid #CCCCCC;
+	color:#666666;
+	margin:0pt 0pt 1.4em;
+}
+
+.jazzy pre{  
+  	font-family: Monaco, Verdana, sans-serif;  
+  	margin: 0;
+  	overflow:auto;
+  	line-height: 1.4em;  
+  	padding-top:2px;
+  	padding-bottom: 2px;   
+  	font-size:12px;
+} 
+   
+.jazzy tr, td{
+	padding: 0;
+	margin: 0;  
+	border:none;   
+} 
+
+.jazzy td.line_numbers{   
+	background-color: #DDF0FF;        
+	text-align: right;   
+	padding-right:2px;
+	width: 21px;         
+} 
+.jazzy td.code{   
+	background-color: #000000; 
+	padding-left: 5px;        
+}
